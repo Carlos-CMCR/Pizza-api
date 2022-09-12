@@ -23,10 +23,10 @@ use Illuminate\Support\Facades\Route;
 
 
 
-// Route::get('pizzas', [PizzaController::class,'getPizzas']);
 // Route::post('register', [UserController::class,'register']);
 // Route::post('login', [UserController::class,'authenticate']);
 
+Route::get('pizzas', [PizzaController::class,'getPizzas']);
 Route::post('login', [AuthController::class, 'login']);
 Route::post('logout', [AuthController::class, 'logout']);
 Route::post('refresh', [AuthController::class, 'refresh']);
